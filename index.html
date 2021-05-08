@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+  <script src="form.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+
+  <title>SignIn, SignUp and Logout Form using Firebase</title>
+</head>
+<body>
+  <div id="formContainer" class="formContainer">
+    <div id="header" class="header">Fill Up the Form </div>
+    <input type="email" placeholder="name@gmail.com" id="email">
+    <input type="password" placeholder="6+ Chacters | 1 Capital Letter" id="password">
+    <button onclick="signIn()" id="signIn">Sign In</button>
+    <button onclick="signUp()" id="signUp">Sign Up</button>
+    <button onclick="signOut()" id="signOut" class="logOut">Log Out</button>
+
+  </div>
+
+</body>
+</html>
